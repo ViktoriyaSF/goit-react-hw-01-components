@@ -11,11 +11,11 @@ import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../components/JSON/transactions.json';
 
 import { GlobalStyle } from './BasicStyles/GlobalStyle';
-import { Container } from './BasicStyles/Container.styled';
+import { Layout } from './Layout/Layout';
 
 export const App = () => {
   return (
-    <Container>
+    <Layout>
       <ProfileUser
         username={user.username}
         tag={user.tag}
@@ -27,6 +27,6 @@ export const App = () => {
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
       <GlobalStyle />
-    </Container>
+    </Layout>
   );
 };
