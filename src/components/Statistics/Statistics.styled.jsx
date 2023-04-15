@@ -29,7 +29,7 @@ export const StatItem = styled.li`
   text-align: center;
   gap: 10px;
   padding: 10px;
-  width: 65px;
+  width: 55px;
 
   color: ${p => p.theme.color.white};
 
