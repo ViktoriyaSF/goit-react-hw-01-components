@@ -10,18 +10,12 @@ import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../components/JSON/transactions.json';
 
+import { GlobalStyle } from './BasicStyles/GlobalStyle';
+import { Container } from './BasicStyles/Container.style';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <Container>
       <ProfileUser
         username={user.username}
         tag={user.tag}
@@ -32,6 +26,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+      <GlobalStyle />
+    </Container>
   );
 };
