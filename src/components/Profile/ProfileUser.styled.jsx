@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
   box-shadow: ${p => p.theme.color.shadow};
-  border-radius: ${p => p.theme.radii.sm};
 `;
 
 export const Description = styled.div`
@@ -14,7 +13,9 @@ export const Description = styled.div`
 
   padding: 10px 5px;
 
-  background-color: white;
+  background-color: ${p => p.theme.color.white};
+  border-top-left-radius: ${p => p.theme.radii.sm};
+  border-top-right-radius: ${p => p.theme.radii.sm};
   h2 {
     color: ${p => p.theme.color.title};
   }
@@ -43,6 +44,9 @@ export const Stats = styled.ul`
   align-items: center;
 
   padding: 5px;
+  background-color: ${props => props.theme.color.background};
+  border-bottom-left-radius: ${p => p.theme.radii.sm};
+  border-bottom-right-radius: ${p => p.theme.radii.sm};
 
   font-size: 10px;
   li {
@@ -56,7 +60,9 @@ export const Stats = styled.ul`
     :not(:last-child) {
       border-right: 1px dotted black;
     }
-    &:hover {
+
+    &:hover,
+    &:focus {
       background: ${p => p.theme.color.colorBtn};
       box-shadow: ${p => p.theme.color.shadowBtn};
     }

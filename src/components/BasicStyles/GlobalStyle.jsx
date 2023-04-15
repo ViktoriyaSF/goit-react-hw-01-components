@@ -10,8 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
-   background-color: ${props => props.theme.color.background};
+background: #1F56CE;
+background: -moz-linear-gradient(-45deg, #1F56CE 0%, #22CEBC 41%, #1AD685 100%);
+background: -webkit-linear-gradient(-45deg, #1F56CE 0%, #22CEBC 41%, #1AD685 100%);
+background: linear-gradient(135deg, #1F56CE 0%, #22CEBC 41%, #1AD685 100%);
+   /* background-color: ${props => props.theme.color.background}; */
   color: ${props => props.theme.color.text};
   font-size: 14px;
   letter-spacing: 0.03em;
