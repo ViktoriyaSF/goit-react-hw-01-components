@@ -5,7 +5,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* padding: 10px 5px; */
+
   box-shadow: ${p => p.theme.color.shadow};
   border-radius: ${p => p.theme.radii.md};
   background-color: ${p => p.theme.color.white};

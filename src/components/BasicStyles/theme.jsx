@@ -13,7 +13,7 @@ export const theme = {
   radii: {
     sm: '8px',
     md: '12px',
-    lg: '16px',
+    lg: '14px',
     round: '50%',
   },
 };
