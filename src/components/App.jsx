@@ -11,7 +11,7 @@ import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../components/JSON/transactions.json';
 
 import { GlobalStyle } from './BasicStyles/GlobalStyle';
-import { Container } from './BasicStyles/Container.style';
+import { Container } from './BasicStyles/Container.styled';
 
 export const App = () => {
   return (
