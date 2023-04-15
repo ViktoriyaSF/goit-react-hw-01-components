@@ -24,3 +24,7 @@ export const Tr = styled.tr`
     background-color: ${p => p.theme.color.textInfo};
   }
 `;
+
+// background-color: ${props => props.index % 2 === 0 ?
+// ${p => p.theme.color.white} :
+// ${p => p.theme.color.colorTabl}
