@@ -17,14 +17,18 @@ export const Thead = styled.thead`
 `;
 
 export const Tr = styled.tr`
-  :nth-child(even) {
-    background-color: ${p => p.theme.color.colorTabl};
-  }
+  background-color: ${p => {
+    return p.index % 2 !== 0 && p.theme.color.colorTabl;
+  }};
+
   :hover {
     background-color: ${p => p.theme.color.textInfo};
   }
 `;
+// перевірка що в props отримує
+// ${p => {console.log(p.index);}}
 
-// background-color: ${props => props.index % 2 === 0 ?
-// ${p => p.theme.color.white} :
-// ${p => p.theme.color.colorTabl}
+// варіант для розмалювання таблиці
+// :nth-child(even) {
+//    background-color: ${p => p.theme.color.colorTabl};
+//  }

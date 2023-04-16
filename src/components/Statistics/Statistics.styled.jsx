@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from '../utils/getRandomHexColor';
+import { getRandomHexColor } from '../../utils/getRandomHexColor';
 
 export const Section = styled.section`
   display: flex;

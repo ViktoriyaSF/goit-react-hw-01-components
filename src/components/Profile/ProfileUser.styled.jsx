@@ -18,6 +18,10 @@ export const Description = styled.div`
   border-top-right-radius: ${p => p.theme.radii.sm};
   h2 {
     color: ${p => p.theme.color.title};
+    :hover,
+    :focus {
+      transform: scale(1.045);
+    }
   }
 `;
 
@@ -31,6 +35,7 @@ export const Avatar = styled.img`
   width: 100px;
 
   border-radius: ${p => p.theme.radii.round};
+  box-shadow: ${p => p.theme.color.shadowBtn};
 `;
 
 export const Info = styled.p`
